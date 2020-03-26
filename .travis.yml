@@ -13,7 +13,7 @@ after_success:
     - docker build -t gentlyawesome/multi-nginx ./nginx
     - docker build -t gentlyawesome/multi-server ./server
     - docker build -t gentlyawesome/multi-worker ./worker
-    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stidn
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     - docker push gentlyawesome/multi-client
     - docker push gentlyawesome/multi-nginx
     - docker push gentlyawesome/multi-server
