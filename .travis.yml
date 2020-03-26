@@ -23,11 +23,11 @@ deploy:
     edge: true
     provider: elasticbeanstalk
     region: us-east-1
-    app: docker-multi-container
-    env: DockerMultiContainer-env
-    bucket_name: docker-multi-container 
-    bucket_path: docker-multi-container
+    app: "docker-multi-container"
+    env: "DockerMultiContainer-env"
+    bucket_name: "docker-multi-container"
+    bucket_path: "docker-multi-container"
     on: 
         branch: master
-        access_key_id: $AWS_ACCESS_KEY
-        secret_access_key: $AWS_SECRET_KEY
+        access_key_id: "$AWS_ACCESS_KEY"
+        secret_access_key: "$AWS_SECRET_KEY"
