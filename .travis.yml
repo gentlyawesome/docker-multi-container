@@ -20,13 +20,12 @@ after_success:
     - docker push gentlyawesome/multi-worker
 
 deploy: 
-    edge: true
     provider: elasticbeanstalk
-    region: us-east-1
-    app: docker-multi-container
-    env: DockerMultiContainer-env
-    bucket_name: docker-multi-container 
-    bucket_path: docker-multi-container
+    region: "us-east-1"
+    app: "docker-multi-container"
+    env: "DockerMultiContainer-env"
+    bucket_name: "docker-muti-container-2"
+    bucket_path: "docker-multi-container"
     on: 
         branch: master
     access_key_id: $AWS_ACCESS_KEY
